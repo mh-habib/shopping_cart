@@ -48,6 +48,7 @@ const updateCart = () => {
 
   checkoutSection.innerHTML += `<p>Total: $${total.toFixed(2)}</p>`;
   checkoutSection.innerHTML += `<button onclick="clearCart()">Clear Cart</button>`;
+  checkoutSection.innerHTML += ` <button> Proceed to Checkout</button>`;
 };
 
 const updateQuantity = (productId, change) => {
