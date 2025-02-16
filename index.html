@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div id="cart-count">Cart: 0</div>
+    <button id="view-cart">View Cart</button>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Product List Section -->
+    <section id="product-list" class="product-list">
+      <!-- Products will be displayed dynamically here -->
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout" style="display: none;">
+      <h2>Cart Summary</h2>
+      <!-- Cart items and total cost will be dynamically added here -->
+      <div id="cart-items"></div>
+      <div id="total-price"></div>
+      <button id="clear-cart">Clear Cart</button>
+      <button id="checkout-button">Proceed to Checkout</button>
+    </section>
+  </main>
+
+  <!-- Include JavaScript files -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
